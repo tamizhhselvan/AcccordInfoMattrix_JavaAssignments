@@ -6,11 +6,11 @@ public class ReversingEachWordInString {
     public static void main(String[] args) {
 
         String str ="java program";
-        String[] str1 =str.split(" ");
+        String[] words =str.split(" ");
         String reversedString = "";
-       for (String word:str1){          // this is enhanced for loop
+       for (String word:words){          // this is enhanced for loop
                                         // for (int i = 0; i < words.length; i++) {
-                                        // String word = str[i];
+                                        // String word = words[i];
            String reversedWord = "";
            for (int i = word.length() - 1; i >= 0; i--) {
                reversedWord += word.charAt(i);
