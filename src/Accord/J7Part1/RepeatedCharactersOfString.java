@@ -1,21 +1,28 @@
 package Accord.J7Part1;
 
+import java.util.Arrays;
+
 public class RepeatedCharactersOfString {
     public static void main(String[] args) {
-        String str="elephant";
+        String str = "example";
+        char[] ch = new char[str.length()];
         for (int i = 0; i < str.length(); i++) {
+            ch[i]=str.charAt(i);
+        }
+  //      System.out.println(Arrays.toString(ch));
+        for (int i = 0; i < ch.length; i++) {
             int count=0;
-            for (int j = i+1; j < str.length(); j++) {
-                if (str.charAt(i)==str.charAt(j)){
+            for (int j = i+1; j < ch.length; j++) {
+                if (ch[i]=='X'){
+                    break;
+                }
+                if(ch[i]==ch[j]){
                     count++;
-                 //   str.charAt(j)='\0';str.
-//                    char x =str.charAt(j);
-//                    char temp= Character.toUpperCase(x);
-//                    str.charAt(j)= temp;
+                    ch[j]='X';
                 }
             }
             if (count>0){
-                System.out.println(str.charAt(i));
+                System.out.println(ch[i]);
             }
         }
     }
