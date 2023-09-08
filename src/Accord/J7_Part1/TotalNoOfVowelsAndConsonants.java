@@ -1,4 +1,4 @@
-package Accord.J7Part1;
+package Accord.J7_Part1;
 public class TotalNoOfVowelsAndConsonants {
  public static void main(String[] args) {
         String name ="program";

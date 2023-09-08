@@ -1,4 +1,4 @@
-package Accord.J7Part2;
+package Accord.J7_Part2;
 
 public class DiamondShapeButInNumbers {
     public static void main(String[] args) {

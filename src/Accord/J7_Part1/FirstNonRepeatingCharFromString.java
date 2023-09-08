@@ -1,6 +1,4 @@
-package Accord.J7Part1;
-
-import java.util.Arrays;
+package Accord.J7_Part1;
 
 public class FirstNonRepeatingCharFromString {
     public static void main(String[] args) {

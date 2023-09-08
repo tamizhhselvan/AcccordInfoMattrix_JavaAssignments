@@ -1,4 +1,4 @@
-package Accord.J7Part1;
+package Accord.J7_Part1;
 
 public class RemovingAllWhiteSpaceFromString {
     public static void main(String[] args) {
