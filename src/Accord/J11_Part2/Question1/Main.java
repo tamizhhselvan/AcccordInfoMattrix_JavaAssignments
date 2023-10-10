@@ -17,17 +17,17 @@ class Bank{
 
 class ICICi extends Bank{
     int accountBalance;
-    void ownInterestCal(int accountBalance){
+    void interestCal(int accountBalance){
         int interestPercent = 4;
-        System.out.println("The accumulated interest for your balance is " + (interestPercent * accountBalance)/100);
+        System.out.println("The accumulated interest for your ICICI Bank account is " + (interestPercent * accountBalance)/100);
     }
 }
 
 class SBI extends Bank{
     int accountBalance;
-    void ownInterestCal(int accountBalance){
+    void interestCal(int accountBalance){
         float interestPercent = 4.5f;
-        System.out.println("The accumulated interest for your balance is " + (interestPercent * (float) accountBalance)/100);
+        System.out.println("The accumulated interest for your SBI Bank account is " + (interestPercent * (float) accountBalance)/100);
     }
 }
 
@@ -38,7 +38,7 @@ public class Main {
         SBI   obj2 = new SBI();
 
         obj.interestCal(15000);     // calling Bank class's method
-        obj1.ownInterestCal(2000);  // calling ICICI class's method
-        obj2.ownInterestCal(2500);  // calling SBI class's method
+        obj1.interestCal(2000);     // calling ICICI class's method
+        obj2.interestCal(2500);     // calling SBI class's method
     }
 }
